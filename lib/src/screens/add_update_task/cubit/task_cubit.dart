@@ -77,7 +77,7 @@ class TaskCubit extends Cubit<TaskState> {
     Set<String> dbTaskIds = dbTasks.map((task) => task.id!).toSet();
     Set<String> localTaskIds = localDbTasks.map((task) => task.id!).toSet();
 
-    if (dbTaskIds .length  == localTaskIds.length) {
+    if (dbTaskIds.length == localTaskIds.length && dbTaskIds.containsAll(localTaskIds)) {
       emit(TaskSyncErrorState('Already updated'));
       return;
     }
