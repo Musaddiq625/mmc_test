@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "522090932273",
+    "firebase_url": "https://task-todo-mmc-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "task-todo-mmc",
+    "storage_bucket": "task-todo-mmc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522090932273:android:da5164211c8eafb46b4d10",
+        "android_client_info": {
+          "package_name": "com.mmc_test1.mak625"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC55N5zjF7iCJZG8BwL5l24Rz5tunK_mWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
