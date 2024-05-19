@@ -59,6 +59,7 @@ class _UITextFieldState extends State<UITextField> {
       maxLength: 25,
       style: const TextStyle(fontSize: 14),
       validator: (value) {
+        if(widget.readOnly) return null;
         if ((value ?? '').trim().isEmpty) {
           return '${StringConstants.errorThisFieldCantBeEmpty} ';
         }
