@@ -4,12 +4,14 @@ class UIScaffold extends StatefulWidget {
   final Widget widget;
   final Widget? bottomNavigationBar;
   final Widget? floatingActionButton;
+  final bool removeBackButton;
 
   const UIScaffold({
     super.key,
     required this.widget,
     this.bottomNavigationBar,
     this.floatingActionButton,
+    this.removeBackButton = false,
   });
 
   @override
@@ -34,7 +36,9 @@ class _UIScaffoldState extends State<UIScaffold> {
         floatingActionButton: widget.floatingActionButton,
         appBar: PreferredSize(
           preferredSize: const Size(double.infinity, 30),
-            child: AppBar()),
+            child: AppBar(
+              leading: widget.removeBackButton? Text(''):null,
+            )),
       ),
     );
   }

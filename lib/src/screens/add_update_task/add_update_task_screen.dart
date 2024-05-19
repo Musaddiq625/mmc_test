@@ -48,6 +48,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       child: GestureDetector(
         onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
         child: UIScaffold(
+          removeBackButton: true,
           widget: BlocConsumer<TaskCubit, TaskState>(
             listener: (context, state) {
               if (state is TaskAddSuccessState) {
@@ -93,9 +94,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 labelText: StringConstants.id,
                                 readOnly: true,
                               ),
-                              SizedBoxConstants.eightH(),
-                              SizedBoxConstants.eightH(),
-                              SizedBoxConstants.eightH(),
                               SizedBoxConstants.eightH(),
                               UITextField(
                                 controller: titleController,
